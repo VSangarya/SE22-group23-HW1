@@ -11,6 +11,8 @@
 
 <img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social">
 
+<img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/simple_build.yml/badge.svg">
+
 <br>
 
 # SE22-group23-HW1
@@ -25,17 +27,21 @@
 
 ### Installation Guide:
 
-<li> Refer to <a href=""> Installation.md. </a>
+<li> Refer to <a href="Installation.md"> Installation.md. </a>
 </p>
 <hr>
 
 ### Contributing:
-<li> Refer to <a href=""> Contributing.md. </a> for rules on how to contribute to the repository.
+<li> Refer to <a href="Contributing.md."> Contributing.md. </a> for rules on how to contribute to the repository.
 
 <hr>
 
 ### Code of Conduct:
 
-<li> Please adhere to the code of conduct mention in <a href=""> CODE-OF-CONDUCT.md </a> to ensure an inclusive environment for all contributors.
+<li> Please adhere to the code of conduct mention in <a href="CODE-OF-CONDUCT.md"> CODE-OF-CONDUCT.md </a> to ensure an inclusive environment for all contributors.
 
 <hr>
+
+### LICENSE:
+
+<li> MIT
