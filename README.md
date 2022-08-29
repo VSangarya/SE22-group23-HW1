@@ -13,6 +13,8 @@
 
 <img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/simple_build.yml/badge.svg">
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
 <br>
 
 # SE22-group23-HW1
