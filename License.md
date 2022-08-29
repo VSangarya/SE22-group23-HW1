@@ -1,6 +1,6 @@
 # MIT License
 
-**Copyright (c) 2022 Software_engineering_2022_group23**
+**Copyright (c) 2022 Software_engineering_2022_group_23**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
