@@ -11,7 +11,7 @@
 
 <img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social">
 
-<img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/simple_build.yml/badge.svg">
+<img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg">
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
@@ -47,3 +47,35 @@
 ### LICENSE:
 
 <li> MIT
+
+<hr>
+
+## <u>Functions</u>
+
+<ul>
+
+<li>SimpleInterest(principal, rate, time): 
+    <ul>
+    <li> Input: principal <i>(Principal Amount)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
+    <li> Output: Simple Interest on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
+    </ul>
+<br>
+<li>CompoundInterest(principal, rate, time):
+<ul>
+    <li> Input: principal <i>(Principal Amount)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
+    <li> Output: Compund Interest on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
+    </ul>
+<br>
+<li>Inflation(principal, rate, time):
+<ul>
+<li> Input: principal <i>(Original Price)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
+    <li> Output: Inflation on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
+</ul>
+<br>
+<li>PurchasingPower(principal, rate, time)
+<ul>
+<li> Input: principal <i>(Total Money)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
+    <li> Output: Purchasing Power of the <i>principal</i> after <i>time</i>years, when its value depreciates at <i>r</i> % per annum
+</ul>
+
+
