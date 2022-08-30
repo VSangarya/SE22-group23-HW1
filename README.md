@@ -1,4 +1,4 @@
-<div style="width: 50%; margin: 0 auto;">
+<div align="center">
 
 <img src="https://img.shields.io/github/languages/code-size/VSangarya/SE22-group23-HW1">
 
@@ -16,8 +16,6 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 <br>
-
-
 
 </div>
 <h1 align="center">SE22-group23-HW1</h2>
