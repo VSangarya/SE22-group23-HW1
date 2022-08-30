@@ -29,12 +29,12 @@
 
 ### Installation Guide:
 
-<li> Refer to <a href="Installation.md"> Installation.md. </a>
+<li> Refer to <a href="INSTALLATION.md"> Installation.md. </a>
 </p>
 <hr>
 
 ### Contributing:
-<li> Refer to <a href="Contributing.md."> Contributing.md. </a> for rules on how to contribute to the repository.
+<li> Refer to <a href="CONTRIBUTING.md"> Contributing.md. </a> for rules on how to contribute to the repository.
 
 <hr>
 
