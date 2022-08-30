@@ -13,7 +13,7 @@
 
 <img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg">
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE-OF-CONDUCT.md)
 
 <br>
 
@@ -28,7 +28,7 @@
 
 ### Installation Guide:
 
-<li> Refer to <a href="INSTALLATION.md"> Installation.md. </a>
+<li> Refer to <a href="INSTALL.md"> Install.md. </a>
 </p>
 <hr>
 

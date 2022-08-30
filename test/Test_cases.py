@@ -1,4 +1,4 @@
-from code.finCal import *
+from code.finance_calc import *
 
 def test_SI_pass():
     assert 8000 == SimpleInterest(10000,8,10)
