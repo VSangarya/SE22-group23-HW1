@@ -2,6 +2,7 @@
 A simple interest calculator method.
 Returns the final principal amount
 """
+
 def SimpleInterest(principal, rate, time):
   if principal < 0: return "Principal negative, invalid input for function"
   if rate < 0: return "Rate negative, invalid input for funtion"
