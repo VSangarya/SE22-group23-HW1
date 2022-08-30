@@ -14,6 +14,7 @@
 <img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg">
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE-OF-CONDUCT.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033592.svg)](https://doi.org/10.5281/zenodo.7033592)
 
 <br>
 
