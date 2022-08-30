@@ -1,4 +1,4 @@
-<p style="text-align:center;">
+<div style="width: 50%; margin: 0 auto;">
 
 <img src="https://img.shields.io/github/languages/code-size/VSangarya/SE22-group23-HW1">
 
@@ -17,9 +17,10 @@
 
 <br>
 
-# SE22-group23-HW1
 
-</p>
+
+</div>
+<h1 align="center">SE22-group23-HW1</h2>
 <p>
 
 #### The repository is for HW 1 for CSC 510 to demonstrate various files in a good Github repo. 
