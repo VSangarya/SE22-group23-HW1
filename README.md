@@ -6,10 +6,10 @@
 
 <a href="LICENSE.md"><img src="https://img.shields.io/github/license/VSangarya/SE22-group23-HW1"></a>
 
-<a href="graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/VSangarya/SE22-group23-HW1?style=flat-square"></a>
+<a href="https://github.com/VSangarya/SE22-group23-HW1/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/VSangarya/SE22-group23-HW1?style=flat-square"></a>
 
 
-<a href="fork"><img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social"></a>
+<a href="https://github.com/VSangarya/SE22-group23-HW1/fork"><img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social"></a>
 
 <a href=".github/workflows/build.yml"><img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg"></a>
 
