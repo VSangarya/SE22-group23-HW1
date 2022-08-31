@@ -1,19 +1,22 @@
 <div align="center">
 
-<img src="https://img.shields.io/github/languages/code-size/VSangarya/SE22-group23-HW1">
+<a href="code"><img src="https://img.shields.io/github/languages/code-size/VSangarya/SE22-group23-HW1"></a>
 
-<img src="https://img.shields.io/github/downloads/VSangarya/SE22-group23-HW1/total">
+<a href="#"><img src="https://img.shields.io/github/downloads/VSangarya/SE22-group23-HW1/total"></a>
 
-<img src="https://img.shields.io/github/license/VSangarya/SE22-group23-HW1">
+<a href="LICENSE.md"><img src="https://img.shields.io/github/license/VSangarya/SE22-group23-HW1"></a>
 
-<img src="https://img.shields.io/github/commit-activity/m/VSangarya/SE22-group23-HW1?style=flat-square">
+<a href="graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/VSangarya/SE22-group23-HW1?style=flat-square"></a>
 
 
-<img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social">
+<a href="fork"><img src="https://img.shields.io/github/forks/VSangarya/SE22-group23-HW1?style=social"></a>
 
-<img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg">
+<a href=".github/workflows/build.yml"><img src="https://github.com/VSangarya/SE22-group23-HW1/actions/workflows/build.yml/badge.svg"></a>
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE-OF-CONDUCT.md)
+<a href="">[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE-OF-CONDUCT.md)
+
+</a>
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7033592.svg)](https://doi.org/10.5281/zenodo.7033592)
 
 <br>
