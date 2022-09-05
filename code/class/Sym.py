@@ -2,7 +2,7 @@ class Sym:
     n = 0
     at = 0
     name = ""
-    freq = {}
+    has = {}
     summary = {}
 
     def __init__(self, name, index):
@@ -13,15 +13,15 @@ class Sym:
         if v != "?":
             self.n = self.n + 1
 
-            if v in self.freq:
-                self.freq[v] += 1
+            if v in self.has:
+                self.has[v] += 1
             else:
-                self.freq[v] = 1
+                self.has[v] = 1
 
     def mid(self):
         mode = -1
         most = ""
-        for k,v in self.freq.items():
+        for k,v in self.has.items():
             if v > mode :
                 mode = v
                 most = k
@@ -32,5 +32,5 @@ class Sym:
         self.summary["n"] = self.n
         self.summary["at"] = self.at
         self.summary["name"] = self.name
-        self.summary["data"] = self.freq
+        self.summary["data"] = self.has
         return str(self.summary)
