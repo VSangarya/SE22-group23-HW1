@@ -29,7 +29,6 @@ for option, value in default_values:
 
 # parse user-defined options
 Cli(the)
-print(the)
 
 # print help and exit if option 'help' is invoked
 if the["help"]:

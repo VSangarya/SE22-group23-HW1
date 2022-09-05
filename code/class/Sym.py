@@ -1,3 +1,5 @@
+import math
+
 class Sym:
     n = 0
     at = 0
@@ -27,6 +29,12 @@ class Sym:
                 most = k
         return mode
 
+    def div(self):
+        e = 0
+        for key, value in self.has.items():
+            if value > 0:
+                e = e - (value/self.n)*math.log(value/self.n, 2)        
+        return e
 
     def __repr__(self):
         self.summary["n"] = self.n
