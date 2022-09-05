@@ -27,7 +27,7 @@ class Sym:
             if v > mode :
                 mode = v
                 most = k
-        return mode
+        return most
 
     def div(self):
         e = 0
