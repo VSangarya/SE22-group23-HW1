@@ -25,7 +25,7 @@ class Sym:
             if v > mode :
                 mode = v
                 most = k
-        return mode
+        return most
 
 
     def __repr__(self):
