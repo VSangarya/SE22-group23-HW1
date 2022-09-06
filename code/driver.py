@@ -40,7 +40,7 @@ if the["help"]:
 seed(the["seed"])
 
 t=Tests()
-
+t.the()
 if t.sym():
     print("SYM PASSED\n")
 else:
