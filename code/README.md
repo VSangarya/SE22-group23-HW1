@@ -1,1 +1,1 @@
-# This directory contains code for a financial calculator.
+# This directory contains code for hw2.

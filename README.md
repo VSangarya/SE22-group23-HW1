@@ -9,10 +9,10 @@
 
 <br>
 </div>
-<h1 align="center">SE22-group23-HW1</h2>
+<h1 align="center">SE22-group23-HW2</h2>
 <p>
 
-#### The repository is for HW 1 for CSC 510 to demonstrate various files in a good Github repo. 
+#### This branch contains work of hw2 for CSC 510. 
 
 <hr>
 </p>
@@ -39,33 +39,3 @@
 <li> MIT
 
 <hr>
-
-## <u>Functions</u>
-
-<ul>
-
-<li>SimpleInterest(principal, rate, time): 
-    <ul>
-    <li> Input: principal <i>(Principal Amount)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
-    <li> Output: Simple Interest on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
-    </ul>
-<br>
-<li>CompoundInterest(principal, rate, time):
-<ul>
-    <li> Input: principal <i>(Principal Amount)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
-    <li> Output: Compund Interest on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
-    </ul>
-<br>
-<li>Inflation(principal, rate, time):
-<ul>
-<li> Input: principal <i>(Original Price)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
-    <li> Output: Inflation on the <i>principal</i> at <i>r</i>% per annum for <i>time</i> years
-</ul>
-<br>
-<li>PurchasingPower(principal, rate, time)
-<ul>
-<li> Input: principal <i>(Total Money)</i>- FLOAT>0, Rate<i>(% rate of interest per annum)</i>- FLOAT>0, time<i>(number of years)</i>- FLOAT>0
-    <li> Output: Purchasing Power of the <i>principal</i> after <i>time</i>years, when its value depreciates at <i>r</i> % per annum
-</ul>
-
-
