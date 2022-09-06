@@ -4,6 +4,7 @@ Stitches different modules together (main file)
 
 import re
 import sys
+from globals import the
 from cli_parser import Coerce, Cli
 
 # helper string
@@ -21,7 +22,6 @@ OPTIONS:
  -S  --Seperator feild seperator                       = ,
 """
 
-the = {}    # stores 'option':<value> for supported command-line options
 default_values = re.findall(
                   r"\n [-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)", help_str)
 for option, value in default_values:
