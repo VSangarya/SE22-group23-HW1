@@ -1,7 +1,8 @@
 import math
 from random import randrange
 from globals import the
-
+import random
+random.seed(the["seed"])
 class Num:
     n =0
     at =0
@@ -15,11 +16,13 @@ class Num:
     def __init__(self, index, name):
         self.at =index
         self.name =name
+       
 
 
 
     def Nums(self):
         self.has = list(sorted(self.has))
+        
         self.issorted =True
         return self.has
 
@@ -27,18 +30,23 @@ class Num:
 
     def Add(self,v):
         if v != "?":
+            
             self.n = self.n + 1
             self.lo =min(self.lo, v)
             self.hi =max(self.hi, v)
             pos =None
+            
             if len(self.has)<the["nums"]:
+                
                 pos=len(self.has)
                 self.has.append(None)
-            elif randrange(0,1)< the["nums"]/self.n:
+            elif random.uniform(0,1)< the["nums"]/self.n:
+                
                 pos=randrange(0,len(self.has))
             if pos is not None:
                 self.issorted = False
                 self.has[pos]= int(v)
+            
 
 
     def percentile(self,data, perc):
