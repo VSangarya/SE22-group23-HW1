@@ -30,17 +30,18 @@ class Num:
             self.n = self.n + 1
             self.lo =min(self.lo, v)
             self.hi =max(self.hi, v)
-            pos =0
+            pos =None
             if len(self.has)<the["nums"]:
-                pos=len(self.has) +1
-            elif randrange(0,1)< the.nums/self.n:
-                pos=randrange(1,len(self.has))
-            if pos!=0:
+                pos=len(self.has)
+                self.has.append(None)
+            elif randrange(0,1)< the["nums"]/self.n:
+                pos=randrange(0,len(self.has))
+            if pos is not None:
                 self.issorted = False
                 self.has[pos]= int(v)
 
 
-    def percentile(data, perc: int):
+    def percentile(self,data, perc):
         size = len(data)
         return sorted(data)[int(math.ceil((size * perc) / 100)) - 1]
 
