@@ -21,13 +21,13 @@ class Sym:
                 self.has[v] = 1
 
     def mid(self):
-        mode = -1
-        most = ""
+        most = -1
+        mode = ""
         for k,v in self.has.items():
-            if v > mode :
-                mode = v
-                most = k
-        return most
+            if v > most :
+                most = v
+                mode = k
+        return mode
 
     def div(self):
         e = 0
