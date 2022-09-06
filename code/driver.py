@@ -4,8 +4,10 @@ Stitches different modules together (main file)
 
 import re
 import sys
+from random import seed
 from globals import the
 from cli_parser import Coerce, Cli
+from test_engine import Tests
 
 # helper string
 help_str = """CSV : summarized csv file
@@ -34,3 +36,23 @@ Cli(the)
 if the["help"]:
   print(help_str)
   sys.exit(0)
+
+seed(the["seed"])
+
+t=Tests()
+
+if t.sym():
+    print("SYM PASSED\n")
+else:
+    print("SYM FAILED\n")
+
+if t.nums():
+    print("NUMS PASSED\n")
+else:
+    print("NUMS FAILED\n")
+
+
+if t.bignum():
+    print("BIGNUM PASSED\n")
+else:
+    print("BIGNUM FAILED\n")
