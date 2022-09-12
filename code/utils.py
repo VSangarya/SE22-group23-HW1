@@ -4,6 +4,7 @@ Contain utility methods
 
 import re
 import csv
+from globals import the
 
 def IsInt(s):
   return re.match(r"[-+]?\d+$", s) is not None
@@ -11,10 +12,22 @@ def IsInt(s):
 def IsFloat(s):
   return re.match(r"[-+]?\d+\.\d+$", s) is not None
 
+def Coerce(value):
+  if IsInt(value):
+    return int(value)
+  elif IsFloat(value):
+    return float(value)
+  elif value in ("true", "True"):
+    return True
+  elif value in ("false", "False"):
+    return False
+  else: return value
+
 def read_csv(csv_path):
   ret_rows = []
   with open(csv_path, 'r') as f:
-    rows = csv.reader(f, delimiter=",")
+    rows = csv.reader(f, delimiter=the["Seperator"])
+    rows = [[Coerce(item) for item in eachRow] for eachRow in rows]
     for eachRow in rows:
         ret_rows.append(eachRow)
   return ret_rows
@@ -35,7 +48,6 @@ def read_csv(csv_path):
     return dict_cols, col_name
 """
 
-
 def push(t,x):
   t.append(x)
   return  
@@ -46,5 +58,3 @@ def copy(t):
   else:
     for i in range(len(t)):
       t_copy.append(t[i])
-  
-  

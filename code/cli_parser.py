@@ -3,18 +3,7 @@ Methods that deal with parsing command-line options
 """
 
 import sys
-from utils import IsInt, IsFloat
-
-def Coerce(value):
-  if IsInt(value):
-    return int(value)
-  elif IsFloat(value):
-    return float(value)
-  elif value in ("true", "True"):
-    return True
-  elif value in ("false", "False"):
-    return False
-  else: return value
+from utils import Coerce
 
 def Cli(d):
   for option, value in d.items():
