@@ -27,3 +27,16 @@ def read_csv(csv_path):
     for key, val in dict_cols.items():
         dict_cols[key] = list(map(float, val))
     return dict_cols, col_name
+
+def push(t,x):
+  t.append(x)
+  return  
+def copy(t):
+  t_copy=[]
+  if type(t)!='list':
+    return t
+  else:
+    for i in range(len(t)):
+      t_copy.append(t[i])
+  
+  
