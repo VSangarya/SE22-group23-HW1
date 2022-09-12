@@ -11,9 +11,15 @@ def IsInt(s):
 def IsFloat(s):
   return re.match(r"[-+]?\d+\.\d+$", s) is not None
 
+def read_csv(csv_path):
+  ret_rows = []
+  with open(csv_path, 'r') as f:
+    rows = csv.reader(f, delimiter=",")
+    for eachRow in rows:
+        ret_rows.append(eachRow)
+  return ret_rows
 
-
-
+"""
 def read_csv(csv_path):
     with open(csv_path) as f:
         col_name = f.readline().strip('\n').split(",")
@@ -27,6 +33,8 @@ def read_csv(csv_path):
     for key, val in dict_cols.items():
         dict_cols[key] = list(map(float, val))
     return dict_cols, col_name
+"""
+
 
 def push(t,x):
   t.append(x)
