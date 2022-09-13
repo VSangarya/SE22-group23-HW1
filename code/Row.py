@@ -3,7 +3,7 @@ from re import T
 
 import utils
 
-class Rows:
+class Row:
     cells=None
     cooked=None
     isEvaled=False

@@ -4,6 +4,7 @@ Contain utility methods
 
 import re
 import csv
+import math
 from globals import the
 
 def IsInt(s):
@@ -58,3 +59,7 @@ def copy(t):
   else:
     for i in range(len(t)):
       t_copy.append(t[i])
+
+def rnd(x, places):
+    mult = 10**(places or 2)
+    return math.floor(x * mult + 0.5) / mult
