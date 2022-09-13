@@ -1,37 +1,39 @@
-import utils
+from utils import IsFloat, read_csv, rnd
 import Cols
 import Row
 
 class Data:
-    row = {}
-    cols = {}
+    rows = []
+    cols = []
     def __init__(self,src):
-        self.cols = {}
-        self.rows = {}
-        if( type(src) == 'String'):
-            utils.read_csv(src, lambda row : self.add(row))
+        self.cols = []
+        self.rows = []
+        if isinstance(src, str):
+            read_csv(src, lambda row : self.Add(row))
         else:
             for _,row in src.items():
-                self.add(row)
+                self.Add(row)
 
-    def Add(self,xs,row):
-        if (self.cols is None):
-            self.cols = Cols(xs)
-        else:
-            if(xs is not None):
-                row = utils.push(self.rows,xs.cells)
-            elif(xs is None):
-                row = utils.push(self.rows,Row(xs))
-            for _,todo in {self.cols.x, self.cols.y}: 
-                for _,col in todo.items():
-                    col.add(row.cells[col.at])
+    def Add(self, xs):
+        if not self.cols:
+            self.cols = Cols.Cols(xs)
+        else:            
+            row = Row.Row(xs)
+            self.rows.append(row)            
+            for col in [*self.cols.x, *self.cols.y]:
+                col.Add(row.cells[col.at])
 
-    def Stats(self,showCols,v,places = 2,fun = "mid",t={}):
-        showCols = showCols or self.cols.y
-        for _,col in showCols.items():
-            v=fun(col)
-            v= type(v)=="number" and utils.rnd(v,places) or v
-            t[col.name]=v
-        return t
+    def stats(self, places, showCol, fun):
+        t = {}
+        for col in showCol:
+            v = None
+            if fun == "mid":
+                v = col.Mid()
+            elif fun == "div":
+                v = col.Div()
             
+            if IsFloat(str(v)):
+                v = rnd(v, places)
 
+            t[col.name] = v
+        return t

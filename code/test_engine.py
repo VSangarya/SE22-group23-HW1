@@ -1,5 +1,6 @@
 import Sym
 import Num
+import Data
 from random import seed
 from globals import the
 from utils import read_csv
@@ -9,7 +10,7 @@ class Tests:
         return len(globals.the.keys()) > 0            
 
     def csv(self):        
-        data = read_csv("../data/test.csv")
+        data = read_csv("data/test.csv", lambda row : row)
         for o in data[:12]:
             print(o)
         return True
@@ -30,21 +31,35 @@ class Tests:
             num2.Add(i)
         num2.Nums()
         print(num2.has)
+        seed(the["seed"])
         return 32==len((num2.has))
     
     def sym(self):
         sym=Sym.Sym(0,'a')
         list_obj=['a', 'a', 'a', 'a', 'b', 'b', 'c' ]
         for i in list_obj:
-            sym.add(i)
-        mode=sym.mid()
-        entropy=sym.div()
+            sym.Add(i)
+        mode=sym.Mid()
+        entropy=sym.Div()
         print("{}\t{}".format(mode, entropy))
         return mode=="a" and entropy>=1.37 and entropy<=1.38
 
+    def data(self):
+        d = Data.Data("data/test.csv")        
+        for a in d.cols.y:
+            print(a.__repr__())
+        return True
+
+    def stats(self):
+        d = Data.Data("data/test.csv")
+        print("xmid", d.stats(2, d.cols.x, "mid"))
+        print("xdiv", d.stats(3, d.cols.x, "div"))
+        print("ymid", d.stats(2, d.cols.y, "mid"))
+        print("ydiv", d.stats(3, d.cols.y, "div"))
+        return True
+
     def runs(self):
         seed(the["seed"])
-
         if self.sym():
             print("SYM PASSED\n")
         else:
@@ -61,3 +76,11 @@ class Tests:
             print("CSV PASSED\n")
         else:
             print("CSV FAILED\n")
+        if self.stats():
+            print("STATS PASSED\n")
+        else:
+            print("STATS FAILED\n")
+        if self.data():
+            print("DATA PASSED\n")
+        else:
+            print("DATA FAILED\n")

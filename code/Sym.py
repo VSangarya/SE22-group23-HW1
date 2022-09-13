@@ -7,11 +7,11 @@ class Sym:
     has = {}
     summary = {}
 
-    def __init__(self, name, index):
-        self.name = name
+    def __init__(self, index, name):
         self.at =  index
+        self.name = name
 
-    def add(self, v):
+    def Add(self, v):
         if v != "?":
             self.n = self.n + 1
 
@@ -20,7 +20,7 @@ class Sym:
             else:
                 self.has[v] = 1
 
-    def mid(self):
+    def Mid(self):
         most = -1
         mode = ""
         for k,v in self.has.items():
@@ -29,7 +29,7 @@ class Sym:
                 mode = k
         return mode
 
-    def div(self):
+    def Div(self):
         e = 0
         for key, value in self.has.items():
             if value > 0:

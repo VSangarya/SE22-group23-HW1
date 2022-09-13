@@ -11,6 +11,7 @@ class Num:
     hi =-math.inf
     issorted =False
     weight =0
+    summary = {}
 
     def __init__(self, index, name):
         self.at =index
@@ -51,3 +52,13 @@ class Num:
         self.Nums()
         med = self.percentile(self.has, 50)
         return med
+
+    def __repr__(self):
+        self.summary["n"] = self.n
+        self.summary["at"] = self.at
+        self.summary["name"] = self.name        
+        self.summary["lo"] = self.lo
+        self.summary["hi"] = self.hi
+        self.summary["issorted"] = self.issorted
+        self.summary["weight"] = self.weight
+        return str(self.summary)
