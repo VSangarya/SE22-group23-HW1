@@ -9,7 +9,7 @@ class Data:
         self.cols = {}
         self.rows = {}
         if( type(src) == 'String'):
-            csv(src, function(row) self.add(row))
+            utils.read_csv(src, lambda row : self.add(row))
         else:
             for _,row in src.items():
                 self.add(row)
