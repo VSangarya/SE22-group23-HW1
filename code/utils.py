@@ -24,12 +24,13 @@ def Coerce(value):
     return False
   else: return value
 
-def read_csv(csv_path):
+def read_csv(csv_path,fun):
   ret_rows = []
   with open(csv_path, 'r') as f:
     rows = csv.reader(f, delimiter=the["Seperator"])
     rows = [[Coerce(item) for item in eachRow] for eachRow in rows]
     for eachRow in rows:
+        fun(eachRow)
         ret_rows.append(eachRow)
   return ret_rows
 
