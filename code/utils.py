@@ -60,6 +60,7 @@ def copy(t):
   else:
     for i in range(len(t)):
       t_copy.append(t[i])
+  t.setmetatable(t_copy)
 
 def rnd(x, places):
     mult = 10**(places or 2)
