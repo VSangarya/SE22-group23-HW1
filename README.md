@@ -12,7 +12,7 @@
 <h1 align="center">SE22-group23-HW2</h2>
 <p>
 
-#### This branch contains work of hw2 for CSC 510. 
+#### This branch contains work of hw 2,3,4 for CSC 510. 
 
 <hr>
 </p>
