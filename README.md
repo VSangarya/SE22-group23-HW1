@@ -39,3 +39,8 @@
 <li> MIT
 
 <hr>
+
+### RUN:
+<li> Run <a href="code/driver.py"> driver.py</a> to run the code.
+<li> Use <a href="data/test.csv"> test.csv </a> as a sample dataset to test the code. 
+
