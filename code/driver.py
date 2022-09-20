@@ -4,7 +4,7 @@ Stitches different modules together (main file)
 
 import re
 import sys
-from globals import the
+from globals import the, fails
 from cli_parser import Coerce, Cli
 from test_engine import Tests
 
@@ -37,4 +37,5 @@ if the["help"]:
   sys.exit(0)
 
 t = Tests()
-t.runs()
+t.runs(the["eg"])
+sys.exit(fails)
