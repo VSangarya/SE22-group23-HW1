@@ -7,16 +7,16 @@ import csv
 import math
 from globals import the
 
-def IsInt(s):
+def is_int(s):
   return re.match(r"[-+]?\d+$", s) is not None
 
-def IsFloat(s):
+def is_float(s):
   return re.match(r"[-+]?\d+\.\d+$", s) is not None
 
-def Coerce(value):
-  if IsInt(value):
+def coerce(value):
+  if is_int(value):
     return int(value)
-  elif IsFloat(value):
+  elif is_float(value):
     return float(value)
   elif value in ("true", "True"):
     return True
@@ -26,36 +26,20 @@ def Coerce(value):
 
 def read_csv(csv_path,fun):
   ret_rows = []
-  with open(csv_path, 'r') as f:
+  with open(csv_path, "r", encoding = "utf-8") as f:
     rows = csv.reader(f, delimiter=the["Seperator"])
-    rows = [[Coerce(item) for item in eachRow] for eachRow in rows]
-    for eachRow in rows:
-        fun(eachRow)
-        ret_rows.append(eachRow)
+    rows = [[coerce(item) for item in r] for r in rows]
+    for r in rows:
+      fun(r)
+      ret_rows.append(r)
   return ret_rows
-
-"""
-def read_csv(csv_path):
-    with open(csv_path) as f:
-        col_name = f.readline().strip('\n').split(",")
-        data = [dict(zip(col_name, i)) for i in csv.reader(f)]
-
-    dict_cols = {i:[c[i] for c in data] for i in col_name}
-
-    index = [idx for idx, s in enumerate(col_name) if ':' in s][0]
-    dict_cols.pop(col_name[index])
-    col_name.pop(index)
-    for key, val in dict_cols.items():
-        dict_cols[key] = list(map(float, val))
-    return dict_cols, col_name
-"""
 
 def push(t,x):
   t.append(x)
-  return  
+
 def copy(t):
   t_copy=[]
-  if type(t)!='list':
+  if isinstance(t, list):
     return t
   else:
     for i in range(len(t)):
@@ -63,5 +47,5 @@ def copy(t):
   t.setmetatable(t_copy)
 
 def rnd(x, places):
-    mult = 10**(places or 2)
-    return math.floor(x * mult + 0.5) / mult
+  mult = 10**(places or 2)
+  return math.floor(x * mult + 0.5) / mult

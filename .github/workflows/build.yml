@@ -26,12 +26,8 @@ jobs:
           pip install pylint pytest
           pylint --rcfile=.pylintrc code/*.py
           
-      - uses: actions/checkout@v3
       - name: Run tests
         run: |          
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           cd code
           python driver.py -e all
-          
-      
-          

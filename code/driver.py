@@ -5,7 +5,7 @@ Stitches different modules together (main file)
 import re
 import sys
 from globals import the, fails
-from cli_parser import Coerce, Cli
+from cli_parser import coerce, Cli
 from test_engine import Tests
 
 # helper string
@@ -26,7 +26,7 @@ OPTIONS:
 default_values = re.findall(
                   r"\n [-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)", help_str)
 for option, value in default_values:
-  the[option] = Coerce(value)
+  the[option] = coerce(value)
 
 # parse user-defined options
 Cli(the)

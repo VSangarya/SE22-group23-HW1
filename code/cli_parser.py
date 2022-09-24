@@ -3,7 +3,7 @@ Methods that deal with parsing command-line options
 """
 
 import sys
-from utils import Coerce
+from utils import coerce
 
 def Cli(d):
   for option, value in d.items():
@@ -21,4 +21,4 @@ def Cli(d):
           value = sys.argv[i+1]
           i = i + 1   # increment i to skip reading next argument!
       i = i + 1
-    d[option] = Coerce(value)
+    d[option] = coerce(value)
