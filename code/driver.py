@@ -37,5 +37,8 @@ if the["help"]:
   sys.exit(0)
 
 t = Tests()
-t.runs(the["eg"])
+try:
+  t.runs(the["eg"])
+except Exception as e:
+  print(getattr(e, 'message', repr(e)))
 sys.exit(fails)
