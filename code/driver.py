@@ -39,6 +39,6 @@ if the["help"]:
 t = Tests()
 try:
   t.runs(the["eg"])
-except Exception as e:
+except Exception as e: # pylint: disable=broad-except
   print(getattr(e, "message", repr(e)))
 sys.exit(fails)
