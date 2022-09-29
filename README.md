@@ -1,5 +1,6 @@
 <div align="center">
 
+<a href="code/coverage.json">![Code Coverage](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=coverage&query=%24.totals.percent_covered_display&suffix=%25&url=https%3A%2F%2Fraw.githubusercontent.com%2FVSangarya%2FSE22-group23-HW1%2Fcode-coverage%2Fcode%2Fcoverage.json)</a>
 <a href="code">![Code Size](https://img.shields.io/github/languages/code-size/VSangarya/SE22-group23-HW1)</a>
 <a href="#">![Downloads](https://img.shields.io/github/downloads/VSangarya/SE22-group23-HW1/total)</a>
 <a href="LICENSE.md">![License](https://img.shields.io/github/license/VSangarya/SE22-group23-HW1)</a>
