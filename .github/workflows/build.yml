@@ -21,13 +21,21 @@ jobs:
     steps:
                
       - uses: actions/checkout@v3
+      - name: Install dependency libs
+        run: |
+          pip install pylint pytest coverage
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with pylint
         run: |
-          pip install pylint pytest
           pylint --rcfile=.pylintrc code/*.py
+
+      - name: Code coverage
+        run: |       
+          cd code
+          coverage run driver.py -e all
+          coverage json
+          coverage report
           
       - name: Run tests
-        run: |          
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          cd code
+        run: |
           python driver.py -e all
