@@ -38,4 +38,5 @@ jobs:
           
       - name: Run tests
         run: |
+          cd code
           python driver.py -e all
