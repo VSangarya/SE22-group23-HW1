@@ -25,7 +25,7 @@
 |Test cases are routinely executed|through Github Actions along with code coverage|3|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|GitHub|1|
 |Issues are discussed before they are closed|Comments on Issues|3|
-|Chat channel: exists|No||
+|Chat channel: exists|No|0|
 |Test cases: a large proportion of the issues related to handling failing cases.|GitHub Actions|3|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|Github|3|
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|Github|2|
